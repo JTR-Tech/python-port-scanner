@@ -33,8 +33,8 @@ def scanport(port, subnet="192.168"):
 
 if __name__ == '__main__':
     if(len(sys.argv) == 2):
-	scanport(sys.argv[1])
+	print(scanport(sys.argv[1]))
     elif(len(sys.argv) == 3):
-	scanport(sys.argv[1], sys.argv[2])
+	print(scanport(sys.argv[1], sys.argv[2]))
     else:
 	print("port argument required")
