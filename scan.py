@@ -22,7 +22,7 @@ def scanport(port, subnet="192.168"):
     port = int(port)
     addresses = []
     port_hosts = []
-    for i in range(1, 255):
+    for i in range(0, 255):
     	for k in range(1, 255):
     		addresses.append(('{0}.{1}.{2}'.format(subnet, i, k), port))
     result = pool.map(tryport, addresses)
