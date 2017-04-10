@@ -19,6 +19,7 @@ def scanport(port, subnet="192.168"):
        subnet in a multi-threaded implimentation to quickly detect if the port
        is up on a reachable local network.
     """
+    port = int(port)
     addresses = []
     port_hosts = []
     for i in range(1, 255):
